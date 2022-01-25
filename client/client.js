@@ -15,4 +15,4 @@ client.getUserById({
     domainkey: process.env.DOMAIN_KEY
 }, (err, notes) => {
     console.log(err, notes)
-})
+}) //
