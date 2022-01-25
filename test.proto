@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+message User {
+    string email = 1;   
+    string password = 2;
+    string domain = 3;
+    string domainkey = 4;
+}
+
+message UserGetByIdRequest { 
+    string email = 1;
+    string domain = 3;
+    string domainkey = 4;
+}
+
+service UserService {
+    rpc getUserById(UserGetByIdRequest) returns (User) {};
+}

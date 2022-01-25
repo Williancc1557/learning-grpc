@@ -1,0 +1,17 @@
+{
+  "name": "grpc-learning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./server/test.js",
+    "client": "node ./client/client.js"
+  },
+  "dependencies": {
+    "@grpc/proto-loader": "^0.6.9",
+    "axios": "^0.25.0",
+    "grpc": "^1.24.11",
+    "grpc-tools": "^1.11.2"
+  }
+}
